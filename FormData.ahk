@@ -18,6 +18,7 @@
  * commonly used for file uploads and submitting forms with complex data.
  *
  * ---
+ * 
  * ### Instance Properties
  *
  * @prop {String}      contentType - The Content-Type header for the form data.
@@ -25,10 +26,13 @@
  * @prop {ComObjArray} data        - The binary representation of the form data to be sent via the body of an HTTP request.
  *
  * ---
+ * 
  * ### Methods
+ * 
  * @method __New(data) - Creates a new FormData object handling binary files for HTTP requests.
  * 
  * ---
+ * 
  * ### Example
  * 
  * ```
