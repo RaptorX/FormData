@@ -1,17 +1,20 @@
 ﻿#Requires Autohotkey v2.0-
 
 /**
- * ============================================================================ *
- * @Author   : RaptorX                                                          *
- * @Homepage :                                                                  *
- *                                                                              *
- * @Created  : July 20, 2024                                                    *
- * @Modified : July 20, 2024                                                    *
- * ============================================================================ *
+ * =========================================================================== *
+ * @author      RaptorX                                                        *
+ * @version     1.0.1                                                          *
+ * @copyright   Copyright (c) 2024 RaptorX                                     *
+ * @link        https://github.com/RaptorX/FormData                            *
+ * @created     2024-07-20                                                     *
+ * @modified    2024-09-08                                                     *
+ * @description                                                                *
+ * =========================================================================== *
+ * @license     MIT                                                            *
+ * =========================================================================== *
  */
 
 /**
- * @version v1.0.0
  * @description Represents form data to be sent via HTTP.
  *
  * This class allows for the construction of multipart/form-data bodies,\
@@ -23,7 +26,7 @@
  *
  * @prop {String}      contentType - The Content-Type header for the form data.
  * @prop {String}      boundary    - The boundary string used to separate the parts of the form data.
- * @prop {ComObjArray} data        - The binary representation of the form data to be sent via the body of an HTTP request.
+ * @prop {ComObjArray} body        - The binary representation of the form body to be sent via the body of an HTTP request.
  *
  * ---
  * 
@@ -64,7 +67,6 @@
 	OutputDebug http.Status '`n'
 	OutputDebug http.GetAllResponseHeaders() '`n'
 	OutputDebug http.ResponseText '`n'
-
  * ```
  *
  */

@@ -9,22 +9,19 @@ commonly used for file uploads and submitting forms with complex data.
 
 ## Instance Properties
 
-- `String`      contentType - The Content-Type header for the form data.
-- `String`      boundary    - The boundary string used to separate the parts of the form data.
-- `ComObjArray` data        - The binary representation of the form data to be sent via the body of an HTTP request.
-
----
+|Type          |Name         |Description                                                                             |
+|--------------|-------------|----------------------------------------------------------------------------------------|
+|`String`      | contentType | The Content-Type header for the form data.                                             |
+|`String`      | boundary    | The boundary string used to separate the parts of the form data.                       |
+|`ComObjArray` | body        | The binary representation of the form data to be sent via the body of an HTTP request. |
 
 ## Methods
 
 - `__New(data)` - Creates a new FormData object handling binary files for HTTP requests.
 
----
-
 ## Example
 
 ```ahk
-
        parts := {
                token: '3c2e0e0119165134127ca631e551c5f8',
                upload_session: A_Now,
@@ -54,5 +51,4 @@ commonly used for file uploads and submitting forms with complex data.
        OutputDebug http.Status '`n'
        OutputDebug http.GetAllResponseHeaders() '`n'
        OutputDebug http.ResponseText '`n'
-
 ```
